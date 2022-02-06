@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: Roboto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -12,7 +12,7 @@ body {
 
 .container {
     display: grid;
-    grid-template: auto auto auto / auto auto 20vw;
+    grid-template: auto auto auto/ 20vw auto 20vw;
 }
 
 .header {
@@ -31,12 +31,12 @@ body {
 }
 
 .header-one input {
-    margin-right: 70px;
-    border-radius: 5px;
+    margin-right: 100px;
+    margin-left: 20px;
+    border-radius: 10px;
     border-style: none;
     background-color: #e2e8f0;
-    height: 20px;
-    padding-left: 10px;
+    height: 25px;
 }
 
 .header-one div {
@@ -76,7 +76,7 @@ body {
     background-color: #1992d4;
     color: white;
     font-weight: 900;
-    padding: 7px 20px;
+    padding: 10px 25px;
 }
 
 .header-two button:hover {
@@ -84,12 +84,12 @@ body {
 }
 
 .sidebar {
-    width: 200px;
     background-color: #1992d4;
     padding-left: 20px;
     padding-top: 20px;
     padding-right: 20px;
     grid-row: 1/-1;
+    grid-column: 1/2;
 }
 
 .side-content {
@@ -107,8 +107,8 @@ body {
 }
 
 #sidebar-head img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-right: 10px;
     padding-left: 0;
 }
@@ -128,7 +128,7 @@ body {
     font-weight: bold;
 }
 
-.an-header {
+.an-header-heading {
     background-color: var(--main-bg-color);
     margin: 20px;
     grid-row: 2/3;
@@ -145,6 +145,7 @@ body {
 
 .an-title {
     font-size: 15px;
+    margin-bottom: 5px;
 }
 
 .an-content {
@@ -157,7 +158,7 @@ body {
     color: rgb(229, 236, 231);
 }
 
-.trend-header {
+.trend-header-heading {
     grid-row: 3/4;
     grid-column: 3/4;
     margin: 20px;
@@ -189,11 +190,15 @@ body {
     margin-right: 10px;
 }
 
+.trend-title {
+    margin-bottom: 3px;
+}
+
 .trend-content {
     color: var(--content-text-color);
 }
 
-.card-header {
+.card-header-heading {
     grid-row: 2/-1;
     grid-column: 2/3;
     margin: 20px;
@@ -211,9 +216,10 @@ body {
     display: flex;
     padding: 15px;
     background-color: white;
-    box-shadow: 0 3px 10px #0000004f;
+    box-shadow: 0 3px 7px #0000004f;
     border-radius: 5px;
     overflow: hidden;
+    height: 150px;
 }
 
 .card-main {
@@ -224,6 +230,7 @@ body {
 
 .card-title {
     font-size: 17px;
+    margin-bottom: 5px;
 }
 
 .card-content {
