@@ -1,0 +1,239 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+}
+
+:root {
+    --heading-font-size: 20px;
+    --content-text-color: #636363;
+    background-color: #e2e8f0;
+}
+
+.container {
+    display: grid;
+    grid-template: auto auto auto / auto auto 20vw;
+}
+
+.header {
+    grid-column: 2/-1;
+    background-color: white;
+    padding: 10px 30px 15px 20px;
+    box-shadow: 0 3px 10px #0000004f;
+}
+
+.header-one {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-template-columns: auto 1fr auto auto auto;
+    gap: 20px;
+}
+
+.header-one input {
+    margin-right: 70px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #e2e8f0;
+    height: 20px;
+    padding-left: 10px;
+}
+
+.header-one div {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#header-one-avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+.header-two {
+    margin-top: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    grid-template-columns: auto 1fr auto auto auto;
+    gap: 20px;
+}
+
+.header-two img {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+.header-two>div {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.header-two button {
+    border-style: none;
+    border-radius: 20px;
+    background-color: #1992d4;
+    color: white;
+    font-weight: 900;
+    padding: 7px 20px;
+}
+
+.header-two button:hover {
+    background-color: #b00b69;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #1992d4;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    grid-row: 1/-1;
+}
+
+.side-content {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.side-content img {
+    margin-right: 10px;
+    padding-left: 10px;
+}
+
+#sidebar-head img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    padding-left: 0;
+}
+
+#sidebar-head {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+#side-setting {
+    margin-top: 50px;
+}
+
+.heading {
+    font-size: var(--heading-font-size);
+    font-weight: bold;
+}
+
+.an-header {
+    background-color: var(--main-bg-color);
+    margin: 20px;
+    grid-row: 2/3;
+    grid-column: 3/4;
+}
+
+.announcements {
+    background-color: white;
+    box-shadow: 0 3px 10px #0000004f;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.an-title {
+    font-size: 15px;
+}
+
+.an-content {
+    font-size: 10px;
+    color: var(--content-text-color);
+    font-weight: normal;
+}
+
+.announcements hr {
+    color: rgb(229, 236, 231);
+}
+
+.trend-header {
+    grid-row: 3/4;
+    grid-column: 3/4;
+    margin: 20px;
+}
+
+.trending {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 3px 10px #0000004f;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.trend-cell {
+    display: flex;
+    font-weight: normal;
+    font-size: 14px;
+    align-items: center;
+}
+
+.trend-avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.trend-content {
+    color: var(--content-text-color);
+}
+
+.card-header {
+    grid-row: 2/-1;
+    grid-column: 2/3;
+    margin: 20px;
+    margin-right: 0;
+}
+
+.card-container {
+    margin-top: 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+    display: flex;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 3px 10px #0000004f;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 17px;
+}
+
+.card-content {
+    color: var(--content-text-color);
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.card-buttons {
+    align-self: flex-end;
+    display: flex;
+    gap: 10px;
+}
